@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using QuestionServer.Managers;
 
 namespace QuestionServer
 {
@@ -13,6 +14,11 @@ namespace QuestionServer
     {
         public static void Main(string[] args)
         {
+            QuestionsManager._questions.Add(new Question(1));
+            QuestionsManager._questions.Add(new Question(2));
+            QuestionsManager._questions.Add(new Question(3));
+            QuestionsManager._questions.Add(new Question(4));
+            
             CreateHostBuilder(args).Build().Run();
         }
 

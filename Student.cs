@@ -13,6 +13,7 @@ namespace QuestionServer
         public Student(string ip)
         {
             IP = ip;
+            Answers = new Dictionary<int, Question.Answer>();
         }
     }
 }

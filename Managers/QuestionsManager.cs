@@ -7,16 +7,11 @@ namespace QuestionServer.Managers
 {
     public class QuestionsManager
     {
-        private List<Question> _questions;
+        public static List<Question> _questions = new List<Question>();
         private Dictionary<string, Student> _students;
 
         public QuestionsManager()
         {
-            _questions = new List<Question>();
-            _questions.Add(new Question(1));
-            _questions.Add(new Question(2));
-            _questions.Add(new Question(3));
-            _questions.Add(new Question(4));
             _students = new Dictionary<string, Student>();
         }
 
