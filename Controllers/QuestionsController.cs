@@ -35,8 +35,8 @@ namespace QuestionServer.Controllers
             _manager.HandleResponse(response, GetClientIP());
             return NoContent();
         }
-
-        public string GetClientIP()
+        
+        private string GetClientIP()
         {
             return HttpContext.Connection.RemoteIpAddress.ToString();
         }
